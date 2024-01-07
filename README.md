@@ -16,14 +16,14 @@ A large part of developing your proficiency as a software engineer revolves arou
 
 To help Github CLI become second nature, use each challenge as an opportunity to practice the Github workflow.
 
-Project Set Up
+### Project Set Up
 
 1. Fork the challenge repository through the Github browser UI
 2. Clone your fork to your local machine by copying your fork's URL through the Github browser UI and in your terminal command line, running `git clone <fork-url>`
 3. Copy the URL of the source repository through the Github browser UI, and use this to set your remote upstream by running in your terminal command line `git remote add upstream <source-url>`
    * By default, your local clone's remote origin will be set to the URL from which it was created, in this case, your fork.  You'll also want to add a remote upstream connection to the source URL.  In a real world scenario, this allows you to quickly fetch any changes pushed to the source repository in between when you last updated your local clone and now.  If you don't fetch these changes, you may be prevented from pushing your own changes.
 
-Creating Changes
+### Creating Changes
 
 1. In your terminal, Switch to a new branch using `git checkout -b <branch name>` (Make it a habit to always begin changes on a new branch to prevent accidentally pushing changes to a shared branch like `main` in a real world setting)
 2. Add or update the code changes you need to create using your text editors.
@@ -47,7 +47,12 @@ Example:
 
 ```markdown
 // Hashes are used to format headers, with the number of hashes referring to the header style used (H1, H2, H3, etc.)
+
 // Markdown accepts HTML tags.  For this exercise, we'll use the <blockquote> tag to format quotes.  If you aren't familiar with HTML tags, we'll cover them later in the curriculum.  Just know for now that HTML utilizes tags to determine how elements in a web page are rendered, and that tags always compose of an opening tag using the tag name (ex: <blockquote>) and a closing tag using a forward slash in front of the tag name (ex: </blockquote>).
+
+// When generating a table, highlighting the table in the ChatGPT UI won't work.  Use the clipboard button to copy the table.  Also, you won't want to use <blockquote> </blockquote> for rendering tables in Markdown because Markdown handles table rendering automatically in the format given to you by the clipboard button.  You can paste the table as is, and if you want to go the extra step of beautifying it, insert a Greater Than / Right Carrot character (>) at the start of each line of the table 👌.
+
+// In programming languages such as Javascript, double forward slashes indicate comments within a script, and as such are ignored by the compiler.  These comments here are for your own benefit.  The lines below are the actual example of what your Markdown file syntax will look like.
 
 ## Step 1
 
@@ -252,9 +257,13 @@ Our example:
 
 <blockquote>
 Role:  You are world famous broadcaster and biologist David Attenborough in a world where woodchucks are capable of chucking two chunks of wood per pound body weight per minute.  You are narrating a segment on a new episode of Planet Earth showcasing the magnificence of two woodchuck parents teaching their woodchuck child how to chuckwood.
+
 Task:  You are observing a family of three woodchucks chucking chunks of wood.  Write a compelling narrative in the style of the narration on the television series Planet Earth describing the scene of an 18 pound papa woodchuck, 14 pound mama woodchuck teaching their 5 pound baby wood chuck how to chuck wood over the course of 15 minutes.
+
 Background:  Drama is unfolding as the baby woodchuck struggles to chuck wood at the same rate the parents can chuck wood for the first 10 minutes.   The audience is at the edge of their seat, wondering if the baby woodchuck can ever chuck wood as quickly as its parents.  At the end of the segment, the audience must be impressed by the record number of wood chunks chucked by this precious family of woodchucks.
+
 Example:  Intro: The typical woodchuck weighs anywhere between ten and twenty pounds.  Yet they are capable of chucking two chunks of wood for every pound of body weight they possess.  Few special animals in the world are capable of such a feat.  But such a feat does not come naturally.  Young wood chucks often struggle to to chuck wood as effectively as their full grown parents. 
+
 Output:  Write out the narrative script for this segment following the Classic Story Structure of an intro, Rising Incident, Climax, and Ending Resolution.
 </blockquote>
 
@@ -294,7 +303,7 @@ In the time remaining, pick and choose from the following and try to return as m
 
 Just as with the above exercise, copy and paste your prompts and outputs into your Markdown file.  If you find yourself needing to refine and interate through multiple prompts, choose the most relevant ones to demonstrate the evolution of your prompts (ex: beginning, middle, end).
 
-Easy:
+### Easy:
 
 - Have ChatGPT generate a reference sheet for Github CLI commands.  Consider how you want this data organized to generate the most value.
 
@@ -311,7 +320,7 @@ Easy:
 
 - Ask ChatGPT to help you prep for the Whiteboarding portion of a code interview.  Ask it for a whiteboarding challenge, and work through that challenge as if ChatGPT were your interviewer.
 
-Hard:
+### Hard:
 
 - You're working on browser based game or app prototype and you want the ability to navigate a 4x4 grid of cells.  Ask ChatGPT to create this functionality for you.  The end result should be that you can run this script from your console and see it working in your browser.  (Hint, ask to use the Three JS library)
 
